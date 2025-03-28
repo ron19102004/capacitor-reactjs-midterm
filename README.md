@@ -1,54 +1,83 @@
-# React + TypeScript + Vite
+# 🚀 Capacitor + ReactJs - Midterm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📱 **Dự án Midterm sử dụng Capacitor và ReactJS để phát triển ứng dụng di động.**
 
-Currently, two official plugins are available:
+---
+## ✅ Yêu cầu hệ thống
+Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt các công cụ sau:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📌 **JDK 17** → [Tải tại đây](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- 📌 **Android SDK 35**
+- 📌 **Node.js & npm** (khuyên dùng phiên bản LTS)
+- 📌 **Android Studio** (nếu chạy trên Android)
 
-## Expanding the ESLint configuration
+---
+## 🚀 Hướng dẫn cài đặt
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1️⃣ Clone source code
+Chạy lệnh sau để tải mã nguồn về máy:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/ron19102004/capacitor-reactjs-midterm.git
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2️⃣ Cài đặt dependencies  
+Di chuyển vào thư mục dự án và cài đặt các gói cần thiết:
+```bash
+cd capacitor-reactjs-midterm
+npm install
 ```
+### 3️⃣  Chạy ứng dụng
+
+📌 **Mở ứng dụng trên Android bằng Capacitor:**
+
+```bash
+npx cap sync android
+npx cap open android
+```
+🔹 Lưu ý:
+- Nếu chạy trên Android, hãy đảm bảo thiết bị hoặc trình giả lập đã kết nối.
+- Nếu gặp lỗi thiếu thư viện, thử chạy:
+  ```bash
+    npm install 
+    npx cap sync
+    ```
+---
+
+## 📁 Cấu trúc thư mục
+
+Dưới đây là cấu trúc thư mục chính của dự án:
+
+```
+📂 capacitor-reactjs-midterm
+├── 📁 src
+│   ├── 📁 assets          # Chứa hình ảnh, icon...
+│   ├── 📁 components      # Các component custom
+│   ├── 📁 hooks           # Custom hooks
+│   ├── 📄 App.tsx         # File chính của ứng dụng
+│   ├── 📄 main.tsx        # Entry point của ứng dụng
+│   ├── 📄 index.css       # File CSS chính
+├── 📄 package.json        # Dependencies và scripts
+├── 📄 capacitor.config.ts # Cấu hình Capacitor
+├── 📄 tsconfig.json       # Cấu hình TypeScript
+├── 📄 vite.config.ts      # Cấu hình Vite
+└── 📁 android             # Chứa project android được generate từ capacitor
+```
+---
+## 🎨 Giao diện ứng dụng  
+
+✨ **Dưới đây là một số ảnh chụp màn hình của ứng dụng:**  
+
+<p align="center">
+  <img src="src/assets/giaodien.jpg" alt="Giao diện 1" width="400">
+  <img src="src/assets/giaodien2.jpg" alt="Giao diện 2" width="400">
+  <img src="src/assets/giaodien3.jpg" alt="Giao diện 3" width="400">
+</p>
+
+---
+## 🤝 Đóng góp & Liên hệ
+
+🔗 **GitHub:** [github.com/ron19102004](https://github.com/ron19102004)  
+📧 **Email:** [dungtna.22itb@vku.udn.vn](mailto:dungtna.22itb@vku.udn.vn)
+
+💡 Nếu bạn thấy dự án hữu ích, hãy **⭐ Star** repo để ủng hộ nhé! 🚀  
+
