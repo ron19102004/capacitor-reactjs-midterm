@@ -71,6 +71,7 @@ Dưới đây là cấu trúc thư mục chính của dự án:
   <img src="src/assets/giaodien.jpg" alt="Giao diện 1" width="400">
   <img src="src/assets/giaodien2.jpg" alt="Giao diện 2" width="400">
   <img src="src/assets/giaodien3.jpg" alt="Giao diện 3" width="400">
+  <img src="src/assets/giaodien4.jpg" alt="Giao diện 3" width="400">
 </p>
 
 ---
